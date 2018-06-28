@@ -1,4 +1,4 @@
-# prism-markdown-extension
+# markdown-prism
 
 ## Install
 
