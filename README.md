@@ -1,9 +1,22 @@
 # prism-markdown-extension
 
-在 `Lib\site-packages\markdown\extensions` 下放入此文件。
+## Install
 
-使用
+```bash
+pip3 install markdown-prism
+```
+
+## Usage
 
 ```python
-markdown.markdown(text, extensions=['markdown.extensions.prism_code'])
+from markdown import markdown
+from markdown_prism import PrismCodeExtension
+
+text = '''
+`sudo pip3 install markdown-prism`
+'''
+html = markdown(text, extensions=[PrismCodeExtension()])
+print(html)
 ```
+
+then link prism.js and prism css in your html
