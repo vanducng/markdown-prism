@@ -19,7 +19,7 @@ class PrismBlockPreprocessor(markdown.preprocessors.Preprocessor):
         re.MULTILINE | re.DOTALL
     )
     BLOCK_WRAP = '<pre><code{0}>{1}</code></pre>'
-    LANG_TAG = ' class="language-{0}"'
+    LANG_TAG = ' class="line-numbers language-{0}"'
     CODE_WRAP = '<code class="language-markup">{0}</code>'
 
     def __init__(self, md):
