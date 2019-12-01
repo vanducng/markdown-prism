@@ -18,7 +18,7 @@ class PrismBlockPreprocessor(markdown.preprocessors.Preprocessor):
         r'(?P<fence>^(?:~{3,}|`{3,}))[ ]*(\{?\.?(?P<lang>[a-zA-Z0-9_+-]*)\}?)?[ ]*\n(?P<code>.*?)(?<=\n)(?P=fence)[ ]*$',
         re.MULTILINE | re.DOTALL
     )
-    BLOCK_WRAP = '<pre><code{0}>{1}</code></pre>'
+    BLOCK_WRAP = '<pre{0}><code>{1}</code></pre>'
     LANG_TAG = ' class="language-{0}"'
     CODE_WRAP = '<code class="language-markup">{0}</code>'
 
